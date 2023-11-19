@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    max-width: 100wh;
+    max-height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.first-container{
+    text-align: center;
+}
+
+.second-container{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 21px #262226;
+    position: relative;
+}
+
+.red{
+    border-top: 5px solid red;
+}
+
+.blue{
+    border-top: 5px solid blue;
+}
+
+.cyan{
+    border-top: 5px solid cyan;
+    transform: translateY(50%);
+}
+
+.orange{
+    border-top: 5px solid orange;
+    transform: translateY(50%);
+}
+
+img{
+    position: absolute;
+    margin: 0 25px 25px 0;
+    bottom: 0;
+    right: 0;
+}
+/*
+.middle{
+    flex-direction: column;
+}
+/*
+/*text*/
+
+h1{
+    font-size: 35px;
+    margin-top: 80px;
+    font-weight: 200;
+}
+
+h2{
+    font-size: 35px;
+    margin: 25px 0 20px 0;
+}
+
+.first-container p{
+    font-size: 16px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.box p{
+    font-size: 15px;
+}
+
+/*media query*/
+
+@media only screen and (max-width: 1186px) {
+    .cyan{
+        transform: none;
+    }
+    
+    .orange{
+        border-top: 5px solid orange;
+        transform: none;
+
+    }    
+}
+
+@media only screen and (max-width: 800px) {
+    h1{
+        margin-top: 60px;
+        font-size: 30px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .first-container p{
+        width: 60%;
+ 
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    h1{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .first-container p{
+        width: 80%;
+ 
+    }
+}
+
+
